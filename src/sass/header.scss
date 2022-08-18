@@ -1,0 +1,36 @@
+@import "./variables.scss";
+
+.header {
+    height: 120px;
+    width:100%;
+    background-color: $dGreen;
+    position:fixed;
+    top:0;
+    transition-property:"height";
+    transition-duration:0.2s;
+
+    .vote-callout {
+        font-family:'Josefin Slab';
+        font-weight: bold;
+        font-size: 30px;
+        background-color:lighten($blue, 50%);
+        border-radius:10px;
+        color: $blue;
+        font-variant:small-caps
+    }
+    .menu {
+        width: 100%;
+        line-height:100px;
+        display:flex;
+        justify-content: space-evenly;
+        font-weight:200;
+        font-family:'Josefin Slab';
+        color:$lightText;
+        font-size:3rem;
+        a {
+            justify-content: space-between;
+            cursor:pointer;
+        }
+    }
+    
+}

@@ -1,0 +1,12 @@
+@import './variables.scss';
+
+.splash-outer{
+    margin-top:120px;
+    width:100%;
+    background-color:$blue;
+    min-height:600px;
+    background-size:contain;
+    background-position:left;
+    background-repeat:no-repeat;
+
+}
