@@ -1,0 +1,116 @@
+@import './variables.scss';
+
+.contact-us{
+
+    form {
+        background-color:$blue;
+        padding:20px;
+        position:relative;
+
+        p{
+            @include strong-text;
+            color: $lightText;
+        }
+
+        label {
+            @include strong-text;
+            color: $lightText;
+            text-align:left;
+            padding: 15px;
+        }
+        input {
+            @include strong-text;
+            font-family:'Josefin Slab';
+            font-weight:200;
+            color:$darkText;
+            background-color:$lightText;
+            border:none;
+            border-radius:4px;
+            padding:15px;
+            width:60%;
+            display:block;
+        }
+
+        textarea{
+            @include strong-text;
+            font-family:'Josefin Slab';
+            font-weight:200;
+            color:$darkText;
+            background-color:$lightText;
+            border:none;
+            border-radius:4px;
+            padding:15px;
+            width:80%;
+            display:block;
+        }
+        .radio-button{
+            display:inline-block;
+            width: auto;
+        }
+
+        .submit-button {
+            background-color: #1abc9c;
+            color: #fff;
+            text-decoration: none;
+            font-family: Verdana,sans-serif;
+            display: inline-block;
+            font-size: 2rem;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            border-radius: 8px;
+            text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+            height:40px;
+            line-height:40px;
+            padding:0 $defaultPaddingSmall;
+            border:none;
+            width:100%;
+            margin-top:15px;
+        }
+    }
+    
+}
+
+.success-overlay{
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color:#1abc9c;
+    opacity:0.95;
+    z-index: 2000;
+    text-align:center;
+
+    h1 {
+        @include callout-text;
+        color:$lightText;
+        font-size:3rem;
+        font-weight:bold;
+        margin-top:30vh;
+    }
+    h2 {
+        @include strong-text;
+        color:$lightText;
+        font-weight:bold;
+        font-size:2.5rem;
+    }
+
+    button {
+        background-color: $lightText;
+        color:$darkText;
+        cursor:pointer;
+        
+        font-size: 2rem;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 8px;
+        text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+        height:40px;
+        line-height:40px;
+        padding:0 $defaultPaddingSmall;
+        border:none;
+        width:50%;
+        margin-top:15px;
+    }
+
+}

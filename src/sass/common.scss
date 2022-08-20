@@ -1,0 +1,48 @@
+@import './variables.scss';
+
+.section-title {
+    @include callout-text;
+    color:$lightText;
+    font-size:2.5rem;
+    padding:0px;
+    margin:0px;
+    text-align:center;
+}
+
+
+hr {
+    width:50%;
+    box-shadow:1px 1px 4px 2px rgba(255,255,255,0.2);
+    margin:15px auto 30px auto;
+}
+
+.section{
+    background-color:$dGreen;
+    padding:$defaultPaddingLarge $defaultMargin;
+    position:relative;
+    vertical-align: top;
+
+    .contents {
+            margin-bottom:30px;
+            left:40%;
+            width:100%;
+            display:block;
+            color:$lightText;
+            padding:15px;
+            background-color:darken($blue, 10%);
+            font-weight:bold;
+            border-radius:15px;
+          
+            p{
+                white-space: normal;
+                @include strong-text;
+            }
+    
+            a{
+                color:$lightText;
+                @include strong-text;
+            }
+        
+    }
+}
+

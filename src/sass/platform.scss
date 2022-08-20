@@ -1,0 +1,15 @@
+@import './variables.scss';
+
+.campaign{
+
+    p{
+        @include strong-text;
+        color:white;
+    }
+
+    .section-image{
+        float:right;
+        max-width:45%;
+        margin:20px;
+    }
+}

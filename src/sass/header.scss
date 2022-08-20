@@ -1,6 +1,8 @@
 @import "./variables.scss";
 
 .header {
+    padding: $defaultPaddingSmall, $defaultMargin;
+    z-index:1000;
     height: 120px;
     width:100%;
     background-color: $dGreen;
@@ -10,27 +12,94 @@
     transition-duration:0.2s;
 
     .vote-callout {
-        font-family:'Josefin Slab';
-        font-weight: bold;
-        font-size: 30px;
-        background-color:lighten($blue, 50%);
-        border-radius:10px;
-        color: $blue;
-        font-variant:small-caps
+        @include callout-text;
+        background:none;
+        border:none;
+        color: $lightText;
+        display:none;
+        position:relative;
+        width:25%;
+        height:70px;
+        margin: $defaultPaddingSmall $defaultMargin;
+        padding:5px;
     }
+
+    .donate-button{
+        @include callout-text;
+        display: none;
+        position:absolute;
+        right: $defaultMargin;
+        top: $defaultPaddingSmall;
+        width: auto;
+        .donor-box{
+            background: #1abc9c;
+            color: #fff;
+            text-decoration: none;
+            font-family: Verdana,sans-serif;
+            display: inline-block;
+            font-size: 2.5rem;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            border-radius: 2px;
+            box-shadow: 0 1px 0 0 #1f5a89;
+            text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+            height:70px;
+            line-height:70px;
+            padding:0 $defaultPaddingSmall;
+            box-shadow:1px 1px 4px 2px rgba(255,255,255,0.2);
+        }
+    }
+
+
     .menu {
         width: 100%;
         line-height:100px;
         display:flex;
         justify-content: space-evenly;
-        font-weight:200;
+        font-weight:400;
         font-family:'Josefin Slab';
         color:$lightText;
-        font-size:3rem;
+        font-size:2rem;
         a {
             justify-content: space-between;
             cursor:pointer;
         }
+        
     }
-    
+}
+
+html:not([data-scroll='0']) {
+    .header{
+        height:100px;
+        .vote-callout{
+            opacity:0;
+            display:block;
+            animation:fadeIn;
+            animation-duration:1s;
+            animation-delay:0.4s;
+            animation-fill-mode: forwards;
+        }
+        .donate-button{
+            opacity:0;
+            display:block;
+            animation:fadeIn;
+            animation-duration:1s;
+            animation-delay:0.4s;
+            animation-fill-mode: forwards;
+
+        }
+
+        .menu{
+            display:none;
+        }
+    }
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
 }

@@ -4,3 +4,19 @@ $lGreen: #7eab3e;
 $darkText: #1f2020;
 $lightText:#fdfafd;
 $blue: #55656d;
+
+$defaultMargin: 10%;
+$defaultPaddingSmall: 10px;
+$defaultPaddingLarge: 5%;
+
+@mixin callout-text {
+    font-family:'Josefin Slab';
+    font-weight: bold;
+    font-size: 1.6rem;
+    text-shadow: 3px 3px rgba(255,255,255,0.2);
+}
+
+@mixin strong-text {
+    font-family:'Josefin Slab';
+    font-size: 1.6rem;
+}
