@@ -49,9 +49,11 @@ export default class extends React.Component {
 
     return (
         <div ref = {ref} className={"contact-us section"}>
-            <h1 className="section-title"> Contact Us: </h1>
-            <hr/>
-            <form target ={"_blank"} action={"https://docs.google.com/forms/u/1/d/e/1FAIpQLScugQZPQRoZYU-xugtSYumCkDBgnBgqIXZodepknKx03tsrhw/formResponse"}>
+            
+            <form  className={"contents"} target ={"_blank"} action={"https://docs.google.com/forms/u/1/d/e/1FAIpQLScugQZPQRoZYU-xugtSYumCkDBgnBgqIXZodepknKx03tsrhw/formResponse"}>
+                <h1 className="section-title"> Contact Us: </h1>
+                <hr/>
+                
                 <p>Email Address: </p>
                 <input value={email} placeholder={"email"} name={"entry.268754171"} onChange={event => this.setEmail(event.target.value)}></input>
                 <p>Feedback:</p>

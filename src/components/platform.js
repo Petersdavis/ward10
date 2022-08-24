@@ -12,9 +12,10 @@ export default class extends React.Component {
 
     return(
         <div ref={ref} className="campaign section">
-            <h1   className="section-title"> Platform: </h1>
-            <hr/>
-            <div className = "contents">   
+           
+            <div className = "contents">  
+                <h1   className="section-title"> Platform: </h1>
+                <hr/> 
                 <h1 className="sub-title">Affordable Housing: </h1>
                 <img className="section-image" src={housingImage}/>
                 <p>People all over the world see Kitchener as a great place to live. Whether for IT Jobs, a peaceful community, or education, Kitchener-Waterloo is experiencing a net-influx of people.</p>
@@ -48,34 +49,30 @@ export default class extends React.Component {
             <div className = "contents">   
                 <h1 className="sub-title">Climate Preparedness: </h1>
                 <img className="section-image" src={climateImage}/>
-                <p>Today we face great uncertaintainty about our climate.  Most people recognize that global warming is a serious threat to our planet, but many of our leaders aren't clear about what actions we should take today.</p>
-                <p>Climate change is really a problem of savings and investment, and this is directly related to the issue of affordabilty.</p>
-                <p>As long as people are living in survival mode and governments are being run on deficits, there's nothing left to invest in the technology that could transform our society. If as society we can find a path to save more, we would be more secure for any future, and by spending less we would also put the breaks on inflation.</p>
+                <p>Most people now recognize that global warming is a serious threat to our planet, but many of our leaders aren't clear about what actions we should take today.</p>
+                <p>Climate change is a problem of savings and investment, and this is directly related to the crisis of affordabilty and inflation.</p>
+                <p>When people are living in survival mode and governments are run on deficits, there's nothing left to invest in the technology that could transform our society. If as society we can find a path to save more, we would be more secure for any future, and by spending less we would also put the breaks on inflation.</p>
 
                 <h1 className="sub-title">Our Plan: </h1>
                 <ul>
                     <li>
                         <h2>Increase Ridership on the GRT:</h2>
-                        <p>Previous councils have invested heavily in improving our public transit infrastructure.  It's now the responsibility of our council to encourage residents from all demographics to use it! If elected I would support a targeted publicity campaign to increase ridership on routes operating below capacity, and for routes operating at or above capacity explore introducing off-peak pricing to smooth the demand. </p>
+                        <p>Previous councils have invested in improving our public transit infrastructure.  It's now the responsibility of our council to encourage residents from all demographics to use it! If elected I would support a targeted publicity campaign to increase ridership on routes operating below capacity, and for routes operating at or above capacity explore introducing off-peak pricing to smooth the demand. </p>
                     </li>
                     <li>
                         <h2>Better Communication on Climate Change</h2>
-                        <p>Sometimes all it takes is an encouraging word to get someone to change their behaviour.  I propose that municipal governments have a responsibility to educate the community about the reality of climate change and its potential impacts.  This kind of communication from official sources is needed to help offset the spread of misinformation on the internet.</p>
+                        <p>Municipal government has a responsibility to counter the spread of false information on the internet.  I propose a campaign to educate the community about the reality of climate change and its impacts.</p>
                     </li>
                     <li>
-                        <h2>Making sure we are energy secure in low-carbon economy.</h2>
+                        <h2>Energy security for a low-carbon economy.</h2>
                         <p>I want to work with Kitchener-Wilmot Hydro to make sure that we are ahead of the curve as Canada moves towards a low-carbon economy.  In the long run an abundance of sustainable energy will make our community more competitive and a less expensive place to live.</p>
                     </li>
                 </ul>
 
-            </div>
-
-
-            <div className = "contents">   
                 <h1 className="sub-title">Financial Responsibility: </h1>
                 <img className="section-image" src={climateImage}/>
-                <p>The municipality funds vital services to the local community.  This duty should be balanced by the need for long-sighted financial planning.  When the city chooses to overspend it dumps this responsibility on tax-payers and future generations.</p>
-                <p>Elected I would take this responsibility seriously, because I value the services that the city provides but I am deeply concerned by deficits and unsustainable spending.</p>
+                <p>The municipality provides services that are vital to the wellbeing of the local community.  I value these services but there is also a duty to ensure that they are financed sustainably for the foreseeable future.</p>
+                <p>Elected, I would steward the resources of our community carefully with a focus on balancing budgets and not spending beyond our means.</p>
                 <h1 className="sub-title">Our Plan: </h1>
                 <ul>
                     <li>
@@ -88,7 +85,6 @@ export default class extends React.Component {
                         <p>On council, I would support investments that would lead to increased future revenues for the city.  I would also support plans to increase the land owned by the city.</p>
                     </li>
                 </ul>
-
             </div>
         </div>
 

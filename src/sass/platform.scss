@@ -4,7 +4,7 @@
 
     p{
         @include strong-text;
-        color:white;
+        color:$darkText;
     }
 
     .section-image{

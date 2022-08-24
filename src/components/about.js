@@ -10,10 +10,12 @@ export default class extends React.Component {
         const ref =  this.props.aboutRef;
         return (
             <div ref = {ref} className="about section">
-                <h1 className="section-title"> Peter Davis </h1>
-                <hr/>
+                
                 
                 <div className = "contents">
+                <h1 className="section-title"> Peter Davis </h1>
+                <hr/>
+
                     <div className = "candidate-photo">
                         <img src = {ProfilePhoto} />
                     </div>              
