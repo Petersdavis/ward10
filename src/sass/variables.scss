@@ -19,4 +19,6 @@ $defaultPaddingLarge: 5%;
 @mixin strong-text {
     font-family:'Josefin Slab';
     font-size: 1.6rem;
+    font-weight:200; 
+    color:white !important;
 }

@@ -9,7 +9,21 @@
 
     .section-image{
         float:right;
-        max-width:45%;
+        width:45%;
         margin:20px;
+
+        /* Media Queries */
+        @media screen and (max-width: 600px) {
+            float:none;
+            width:80%;
+            margin:15px 10%;
+        }
+    }
+    .rent-image{
+        width:85%;
+        margin:auto;
+        display:block;
+
+
     }
 }

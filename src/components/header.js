@@ -1,7 +1,22 @@
 import '../sass/header.scss'
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 
-export default function () {
+export default function (props) {
+
+    const {aboutRef, platformRef, contactRef} = props;
+    const scrollTo = function(ref) {
+        let el = ref.current;
+    
+        if(el === null) {
+            return;
+        }
+        window.scrollTo({
+          behavior: "smooth",
+          left: 0,
+          top: el.offsetTop - 100
+        });
+
+    }
     useEffect( ()=>{
         // The debounce function receives our function as a parameter
         const debounce = (fn) => {
@@ -44,12 +59,13 @@ export default function () {
     return (
         <div className={"header"}> 
             <a target={"_blank"} href={"https://calendar.google.com/event?action=TEMPLATE&tmeid=MTBlcWI2N3F2aTFkNzFwcTJwamZqaHRjZ28gcGV0ZXIuNC5raXRjaGVuZXIuMTBAbQ&tmsrc=peter.4.kitchener.10%40gmail.com"} className="vote-callout">
-                October 24th,<br/> Elect Peter for Kitchener Ward 10!
+                Peter Davis<br/>
+                Kitchener 10
             </a>
             <div className = "menu">
-                <a>Candidate</a>
-                <a>Platform</a>
-                <a>Contact Us</a>
+                <a onClick = {()=>{scrollTo(aboutRef)}}>Candidate</a>
+                <a onClick = {()=>{scrollTo(platformRef)}}>Platform</a>
+                <a onClick = {()=>{scrollTo(contactRef)}}>Contact Us</a>
             </div>           
             <div className = {"donate-button"}>
                 <a className={"donor-box"} href={"https://donorbox.org/peter-for-kitchener-10?default_interval=o&amount=100"}>Donate!</a>

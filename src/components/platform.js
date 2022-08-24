@@ -1,11 +1,18 @@
+import React from 'react';
+
 import '../sass/platform.scss'
 import housingImage from '../images/housing.jpg';
-import climateImage from '../images/climate.png'
+import climateImage from '../images/climate.png';
+import rentImage from '../images/rentPrices.png';
 
-export default function (){
+export default class extends React.Component {
+
+    render(props){
+    const ref = this.props.platformRef;
+
     return(
-        <div className="campaign section">
-            <h1 className="section-title"> Platform: </h1>
+        <div ref={ref} className="campaign section">
+            <h1   className="section-title"> Platform: </h1>
             <hr/>
             <div className = "contents">   
                 <h1 className="sub-title">Affordable Housing: </h1>
@@ -13,7 +20,9 @@ export default function (){
                 <p>People all over the world see Kitchener as a great place to live. Whether for IT Jobs, a peaceful community, or education, Kitchener-Waterloo is experiencing a net-influx of people.</p>
                 <p>While most newcomers are able to afford housing, their demand pushes rental prices up, and local families earning less than $100,000 a year are left struggling to keep up. In the last 5 years <a href={"https://www.zumper.com/rent-research/kitchener-on"}>rental prices have doubled!</a></p>
                 <p>Clearly, we are falling behind the growth of our community and Kitchener council should act to increase the local supply of housing.</p>
-
+                <a target="_blank" href={"https://www.zumper.com/rent-research/kitchener-on"}>
+                    <img className="rent-image" src={rentImage}/>
+                </a>
                 <h1 className="sub-title">Our Plan: </h1>
                 <ul>
                     <li>
@@ -33,13 +42,14 @@ export default function (){
                     </li>
                 </ul>
 
+
             </div>
 
             <div className = "contents">   
                 <h1 className="sub-title">Climate Preparedness: </h1>
                 <img className="section-image" src={climateImage}/>
-                <p>Today we face great uncertaintainty about our climate.  While there are still a some that deny the reality of climate change, most people recognize that global warming is an existential threat to humanity.</p>
-                <p>The worst part of the situation is the feeling that we are stuck and unable to take meaningful action. The way that I understand this paralysis is that climate change is really a problem of savings and investment, and this is directly related to the issue of affordabilty.</p>
+                <p>Today we face great uncertaintainty about our climate.  Most people recognize that global warming is a serious threat to our planet, but many of our leaders aren't clear about what actions we should take today.</p>
+                <p>Climate change is really a problem of savings and investment, and this is directly related to the issue of affordabilty.</p>
                 <p>As long as people are living in survival mode and governments are being run on deficits, there's nothing left to invest in the technology that could transform our society. If as society we can find a path to save more, we would be more secure for any future, and by spending less we would also put the breaks on inflation.</p>
 
                 <h1 className="sub-title">Our Plan: </h1>
@@ -60,7 +70,28 @@ export default function (){
 
             </div>
 
+
+            <div className = "contents">   
+                <h1 className="sub-title">Financial Responsibility: </h1>
+                <img className="section-image" src={climateImage}/>
+                <p>The municipality funds vital services to the local community.  This duty should be balanced by the need for long-sighted financial planning.  When the city chooses to overspend it dumps this responsibility on tax-payers and future generations.</p>
+                <p>Elected I would take this responsibility seriously, because I value the services that the city provides but I am deeply concerned by deficits and unsustainable spending.</p>
+                <h1 className="sub-title">Our Plan: </h1>
+                <ul>
+                    <li>
+                        <h2>House the homeless:</h2>
+                        <p>To some extent increasing the supply of housing will make living in Kitchener more affordable.  But for the homeless encamped on Victoria St. or in Victoria Park, this change will not impact their lives today.</p>
+                        <p>We should act immediately to expand emergency supportive housing for the chronically homeless. Research has shown that housing the homeless in supportive housing is less expensive than serving them on the street.</p>
+                    </li>
+                    <li>
+                        <h2>Invest wisely for the future:</h2>
+                        <p>On council, I would support investments that would lead to increased future revenues for the city.  I would also support plans to increase the land owned by the city.</p>
+                    </li>
+                </ul>
+
+            </div>
         </div>
 
     )
+};
 }
