@@ -1,7 +1,7 @@
 $dGreen: #506c28;
 $mGreen: #5e8428;
 $lGreen: #7eab3e;
-$darkText: #1f2020;
+$darkText: black;
 $lightText:#fdfafd;
 $blue: #55656d;
 
@@ -17,7 +17,7 @@ $defaultPaddingLarge: 5%;
 }
 
 @mixin strong-text {
-    font-family:'Josefin Slab';
+    font-family: 'EB Garamond', serif;
     font-size: 1.6rem;
     font-weight:200; 
     color:$darkText;

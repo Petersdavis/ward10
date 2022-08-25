@@ -59,8 +59,8 @@ export default class extends React.Component {
                 <p>Feedback:</p>
                 <textarea  value={feedback} rows = {3} placeholder={"feedback"} name={"entry.1364789300"} onChange={event => this.setFeedback(event.target.value)}></textarea>
                 <p>Would you like us to contact you?</p>
-                <label><input value={consent} className={"radio-button"} type={"radio"} name={"entry.719208593"} onChange={event => this.setConsent(event.target.name)}></input>Okay.</label>
-                <label><input value={consent} className={"radio-button"} type={"radio"} name={"entry.719208593"} onChange={event => this.setConsent(event.target.name)}></input>No Thanks.</label>
+                <label><input value="Okay" checked={this.state.consent === "Okay"} className={"radio-button"} type={"radio"} name={"entry.719208593"} onChange={event => this.setConsent(event.target.value)}></input>Okay.</label>
+                <label><input value="No Thanks" checked={this.state.consent === "No Thanks"} className={"radio-button"} type={"radio"} name={"entry.719208593"} onChange={event => this.setConsent(event.target.value)}></input>No Thanks.</label>
 
                 <button className={'submit-button'} onClick={submit}>Submit</button>
 
