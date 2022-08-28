@@ -19,9 +19,9 @@ export default class extends React.Component {
                     <div className = "candidate-photo">
                         <img src = {ProfilePhoto} />
                     </div>              
-                    <p>Born and raised in Kitchener-Waterloo Peter has strong roots in our community. He is currently working as a software developer for local tech start-up Voltera.</p>
-                    <p>Before starting in IT, Peter completed an undergraduate degree in Economics and a master's degree in International Affairs where he studied how municipal governments can be leaders in international climate change negotiations.</p>
-                    <p>Peter is entering the race for Kitchener Ward 10, because he feels that he can fight for specific policies that will directly reduce the cost of living for local residents!</p>
+                    <p>Born and raised in Kitchener-Waterloo Peter has strong roots in our community. He has more than ten years experience volunteering with many community organizations including Ray of Hope and the Out of the Cold Program.  He is currently working as a software developer for local tech start-up company.</p>
+                    <p>Peter has degrees in Economics and International Affairs, which make him the most qualified candidate for Kitchener Ward 10.</p>
+                    <p>Peter values building consensus around challenging issues and will fight for policies that directly reduce the cost of housing in Kitchener.</p>
                 </div>
     
             </div>

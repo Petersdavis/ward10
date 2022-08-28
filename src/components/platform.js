@@ -37,9 +37,9 @@ export default class extends React.Component {
                         <p>Mandating parking requirements per unit of accomodation is an outdated policy.  The developers themselves have a better understanding of the actual demand for parking and an individual who chooses not to own a vehicle shouldn't have the expense of parking bundled into the cost of their unit.</p>
                     </li>
                     <li>
-                        <h2>Find creative ways to support non-profit affordable housing providers.</h2>
+                        <h2>Support non-profit affordable housing providers.</h2>
                         <p>In Kitchener we have several non-profits that have a proven their ability record of building great affordable housing. There are a number of provinicial and federal grant programs that non-profits can access once they have secured land on which to build. The bottleneck is that they must be in possesion of the land before they can submit a proposal.</p>
-                        <p>If elected, I would explore ways that the municipality could raise investment capital to lower this barrier to entry for vetted providers of affordable housing.</p>
+                        <p>We should raise investment capital to lower this barrier to entry for vetted providers of affordable housing.</p>
                     </li>
                 </ul>
 
@@ -57,22 +57,22 @@ export default class extends React.Component {
                 <ul>
                     <li>
                         <h2>Increase Ridership on the GRT:</h2>
-                        <p>Previous councils have invested in improving our public transit infrastructure.  It's now the responsibility of our council to encourage residents from all demographics to use it! If elected I would support a targeted publicity campaign to increase ridership on routes operating below capacity, and for routes operating at or above capacity explore introducing off-peak pricing to smooth the demand. </p>
+                        <p>Previous councils have invested in improving our public transit infrastructure.  It's now the responsibility of our council to encourage residents from all demographics to use it! We should launch a publicity campaign to increase ridership on routes operating below capacity, and for routes operating at or above capacity explore introducing off-peak pricing to smooth the demand. </p>
                     </li>
                     <li>
                         <h2>Better Communication on Climate Change</h2>
-                        <p>Municipal government has a responsibility to counter the spread of false information on the internet.  I propose a campaign to educate the community about the reality of climate change and its impacts.</p>
+                        <p>Municipal government has a responsibility to counter the spread of false information on the internet.  We will do more to communicate to our community about the reality of climate change and its impacts.</p>
                     </li>
                     <li>
                         <h2>Energy security for a low-carbon economy.</h2>
-                        <p>I want to work with Kitchener-Wilmot Hydro to make sure that we are ahead of the curve as Canada moves towards a low-carbon economy.  In the long run an abundance of sustainable energy will make our community more competitive and a less expensive place to live.</p>
+                        <p>We can work with Kitchener-Wilmot Hydro to make sure that we are ahead of the curve as Canada moves towards a low-carbon economy.  In the long run an abundance of sustainable energy will make our community more competitive and a less expensive place to live.</p>
                     </li>
                 </ul>
 
                 <h1 className="sub-title">Financial Responsibility: </h1>
                 <img className="section-image" src={climateImage}/>
-                <p>The municipality provides services that are vital to the wellbeing of the local community.  I value these services but there is also a duty to ensure that they are financed sustainably for the foreseeable future.</p>
-                <p>Elected, I would steward the resources of our community carefully with a focus on balancing budgets and not spending beyond our means.</p>
+                <p>The municipality provides services that are vital to the wellbeing of our community.  We need these services but there is also a duty to ensure that they are financed sustainably for the future.</p>
+                <p>We would steward the resources of our community carefully with a focus on balancing budgets and not spending beyond our means.</p>
                 <h1 className="sub-title">Our Plan: </h1>
                 <ul>
                     <li>
@@ -82,7 +82,7 @@ export default class extends React.Component {
                     </li>
                     <li>
                         <h2>Invest wisely for the future:</h2>
-                        <p>On council, I would support investments that would lead to increased future revenues for the city.  I would also support plans to increase the land owned by the city.</p>
+                        <p>Council must make key decisions about managing and improving the land that it owns.  We should never sell our assets to subsidize short-term spending.</p>
                     </li>
                 </ul>
             </div>
