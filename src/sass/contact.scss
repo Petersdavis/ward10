@@ -1,75 +1,134 @@
 @import './variables.scss';
 
 .contact-us{
+    .col {
+        width:50%;
+        display:inline-block;
+        vertical-align:middle;
 
-    form {
-     
-        p{
-            @include strong-text;
-            color: $darkText;
-        }
-
-        label {
-            @include strong-text;
-            color: $darkText;
-            text-align:left;
-            padding: 15px;
-        }
-        input {
-            @include strong-text;
-            font-family:'Josefin Slab';
-            font-weight:200;
-            color:$darkText;
-            background-color:$lightText;
-            border:2px solid darken($blue, 15%);
-            border-radius:4px;
-            padding:15px;
-            width:60%;
-            display:block;
-            max-width:600px;
-        }
-
-        textarea{
-            @include strong-text;
-            font-weight:200;
-            color:$darkText;
-            background-color:$lightText;
-            border:2px solid darken($blue, 15%);
-
-            border-radius:4px;
-            padding:15px;
-            width:80%;
-            display:block;
-            max-width:600px;
-
-        }
-        .radio-button{
-            display:inline-block;
-            width: auto;
-        }
-
-        .submit-button {
-            background-color: #1abc9c;
-            color: #fff;
-            text-decoration: none;
-            font-family: Verdana,sans-serif;
-            display: block;
-            font-size: 2rem;
-            -webkit-border-radius: 2px;
-            -moz-border-radius: 2px;
-            border-radius: 8px;
-            text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-            height:40px;
-            line-height:40px;
-            padding:0 $defaultPaddingSmall;
-            border:none;
+        /* Media Queries */
+        @media screen and (max-width: 740px) {
             width:100%;
-            margin-top:15px;
-            max-width:600px;
-
+            display:block;
         }
     }
-    
+
+    .socials{       
+        .social-row{
+            a{
+                line-height:45px;
+                .social-image{
+                    vertical-align:middle;
+                    display:inline-block;
+                    width:45px;
+                    height:45px;
+                    padding:15px;
+                }
+                span {
+                    display:inline-block;
+                    color:blue;
+                    text-decoration: underline;
+            
+                }
+            }
+        }
+
+         /* Media Queries */
+         @media screen and (max-width: 740px) {
+            height:50px;
+            position:fixed;
+            bottom:0;
+            left:0;
+            width:100vw;
+            background-color:$dGreen;
+            display:flex;
+            justify-content: space-between;
+            box-shadow:0 0 10px 1px $darkText;
+            .social-row{
+                text-align:center;
+                width:25%;
+                height:50px;
+                display:inline-block;
+                a{
+                    .social-image{
+                        vertical-align:middle;
+                        display:inline-block;
+                        width:35px;
+                        height:35px;
+                        padding:10px;
+                    }
+                    span {
+                        display:none;
+                    }
+                }
+            }
+            
+        }
+
+    }
+}
+
+form {
+     
+    p{
+        @include strong-text;
+        color: $darkText;
+    }
+
+    label {
+        @include strong-text;
+        color: $darkText;
+        text-align:left;
+        padding: 15px;
+    }
+    input {
+        @include strong-text;
+        font-family:'Josefin Slab';
+        font-weight:200;
+        color:$darkText;
+        background-color:$lightText;
+        border:2px solid darken($blue, 15%);
+        border-radius:4px;
+        padding:15px;
+        width:85%;
+        display:block;
+    }
+
+    textarea{
+        @include strong-text;
+        font-weight:200;
+        color:$darkText;
+        background-color:$lightText;
+        border:2px solid darken($blue, 15%);
+
+        border-radius:4px;
+        padding:15px;
+        width:85%;
+        display:block;
+    }
+    .radio-button{
+        display:inline-block;
+        width: auto;
+    }
+
+    .submit-button {
+        background-color: #1abc9c;
+        color: #fff;
+        text-decoration: none;
+        font-family: Verdana,sans-serif;
+        display: block;
+        font-size: 2rem;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 8px;
+        text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+        height:40px;
+        line-height:40px;
+        padding:0 $defaultPaddingSmall;
+        border:none;
+        width:100%;
+        margin-top:15px;
+    }
 }
 
 .success-overlay{
