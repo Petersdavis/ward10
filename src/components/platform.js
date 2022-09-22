@@ -3,6 +3,7 @@ import React from 'react';
 import '../sass/platform.scss'
 import housingImage from '../images/housing.jpg';
 import climateImage from '../images/climate.png';
+import financeImage from '../images/finance.png';
 import rentImage from '../images/rentPrices.png';
 
 export default class extends React.Component {
@@ -67,8 +68,8 @@ export default class extends React.Component {
                 </ul>
 
                 <h1 className="sub-title">Financial Responsibility: </h1>
-                <img className="section-image" src={climateImage}/>
-                <p>Global supply chain issues, the war in Ukraine, and the lingering pandemic are having a profound impact on our economy.  Businesses still recovering from Covid-19 lockdowns are now struggling with inflation nearing 8%.  During this period of high inflation, we need our municipal government to exercise fiscal restraint.  The reality is that the municipal council can’t impact the price of canola oil - but when we choose to launch major infrastructure projects like the 93$ million recreational facility in Schlegel Park, we are putting the city in direct competition with other local developments for scarce local resources.  This kind of development is likely to increase costs across the region making it even harder for Kitchener residents to achieve their financial goals.</p>
+                <img className="section-image" src={financeImage}/>
+                <p>Global supply chain issues, the war in Ukraine, and the lingering pandemic are having a profound impact on our economy.  Businesses still recovering from Covid-19 lockdowns are now struggling with inflation nearing 8%.  During this period of high inflation, we need our municipal government to exercise fiscal restraint.  Municipal council can’t change the price of canola oil - but when we choose to launch major infrastructure projects like the 93$ million recreational facility in Schlegel Park, we are putting the city in direct competition with other local developments for scarce local resources.  This kind of development is likely to increase costs across the region making it even harder for Kitchener residents to achieve their financial goals.</p>
                 <h1 className="sub-title">Our Plan: </h1>
                 <ul>
                     <li>

@@ -19,8 +19,8 @@ export default class extends React.Component {
                     <div className = "candidate-photo">
                         <img src = {ProfilePhoto} />
                     </div>              
-                    <p>Born and raised in Kitchener-Waterloo Peter has strong roots in our community. He has more than ten years experience volunteering with many community organizations including Ray of Hope and the Out of the Cold Program.  He is currently working as a software developer for local tech start-up company.</p>
-                    <p>Peter has degrees in Economics and International Affairs, which make him the most qualified candidate for Kitchener Ward 10.</p>
+                    <p>Born and raised in Kitchener-Waterloo, Peter has strong roots in our community. He has more than ten years experience volunteering with many community organizations including Ray of Hope and the Out of the Cold Program.  He is currently working as a software developer for local tech start-up company.</p>
+                    <p>Peter has degrees in Economics and International Affairs, making him the most qualified candidate for Kitchener Ward 10.</p>
                     <p>Peter values building consensus around challenging issues and will fight for policies that directly reduce the cost of housing in Kitchener.</p>
                 </div>
     

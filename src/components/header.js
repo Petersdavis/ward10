@@ -58,7 +58,7 @@ export default function (props) {
     
     return (
         <div className={"header"}> 
-            <a target={"_blank"} href={"https://calendar.google.com/event?action=TEMPLATE&tmeid=MTBlcWI2N3F2aTFkNzFwcTJwamZqaHRjZ28gcGV0ZXIuNC5raXRjaGVuZXIuMTBAbQ&tmsrc=peter.4.kitchener.10%40gmail.com"} className="vote-callout">
+            <a target={"_blank"} href={"https://www.kitchener.ca/en/council-and-city-administration/find-where-to-vote.aspx#ward-9git "} className="vote-callout">
                 Peter Davis<br/>
                 Kitchener 10
             </a>
