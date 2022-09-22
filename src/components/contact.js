@@ -7,6 +7,11 @@ fetch("https://docs.google.com/forms/u/1/d/e/1FAIpQLScugQZPQRoZYU-xugtSYumCkDBgn
 import React from 'react';
 import '../sass/contact.scss';
 
+import FacebookLogo from '../images/facebook.png';
+import InstagramLogo from '../images/instagram.png';
+import GmailLogo from '../images/gmail.png'
+import TwitterLogo from '../images/twitter.png'
+
 
 export default class extends React.Component {
     constructor(props){
@@ -53,16 +58,36 @@ export default class extends React.Component {
             <form  className={"contents"} target ={"_blank"} action={"https://docs.google.com/forms/u/1/d/e/1FAIpQLScugQZPQRoZYU-xugtSYumCkDBgnBgqIXZodepknKx03tsrhw/formResponse"}>
                 <h1 className="section-title"> Contact Us: </h1>
                 <hr/>
-                
-                <p>Email Address: </p>
-                <input value={email} placeholder={"email"} name={"entry.268754171"} onChange={event => this.setEmail(event.target.value)}></input>
-                <p>Feedback:</p>
-                <textarea  value={feedback} rows = {3} placeholder={"feedback"} name={"entry.1364789300"} onChange={event => this.setFeedback(event.target.value)}></textarea>
-                <p>Would you like us to contact you?</p>
-                <label><input value="Okay" checked={this.state.consent === "Okay"} className={"radio-button"} type={"radio"} name={"entry.719208593"} onChange={event => this.setConsent(event.target.value)}></input>Okay.</label>
-                <label><input value="No Thanks" checked={this.state.consent === "No Thanks"} className={"radio-button"} type={"radio"} name={"entry.719208593"} onChange={event => this.setConsent(event.target.value)}></input>No Thanks.</label>
+                <div className = {"col"}>
+
+                    <p>Email Address: </p>
+                    <input value={email} placeholder={"email"} name={"entry.268754171"} onChange={event => this.setEmail(event.target.value)}></input>
+                    <p>Feedback:</p>
+                    <textarea  value={feedback} rows = {3} placeholder={"feedback"} name={"entry.1364789300"} onChange={event => this.setFeedback(event.target.value)}></textarea>
+                    <p>Would you like us to contact you?</p>
+                    <label><input value="Okay" checked={this.state.consent === "Okay"} className={"radio-button"} type={"radio"} name={"entry.719208593"} onChange={event => this.setConsent(event.target.value)}></input>Okay.</label>
+                    <label><input value="No Thanks" checked={this.state.consent === "No Thanks"} className={"radio-button"} type={"radio"} name={"entry.719208593"} onChange={event => this.setConsent(event.target.value)}></input>No Thanks.</label>
 
                 <button className={'submit-button'} onClick={submit}>Submit</button>
+                </div>
+                <div className = {"col"}> 
+                    <div className = {"socials"}>
+                        <div className = {"social-row"}>
+                            <a href={"mailto:peter.4.kitchener.10@gmail.com?subject=Campaign Feedback"} target={"_blank"}><img className = {"social-image"} src={GmailLogo}/><span>peter.4.kitchener.10@gmail.com</span></a>
+                        </div>
+                        <div className = {"social-row"}>
+                            <a href={"https://www.facebook.com/Peter4Kitchener10"} target={"_blank"}><img className = {"social-image"} src={FacebookLogo}/><span>Facebook</span></a>
+                        </div>
+                        <div className = {"social-row"}>
+                            <a href={"https://www.instagram.com/peter4kitchener10/"} target={"_blank"}><img className = {"social-image"} src={InstagramLogo}/><span>Instagram</span></a>
+                        </div>
+                        <div className = {"social-row"}>
+                            <a href={"https://twitter.com/PeterDavisKW"} target={"_blank"}><img className = {"social-image"} src={TwitterLogo}/><span>Twitter</span></a>
+                        </div>
+
+                    </div>
+                </div>
+
 
                 {success == true ? (
                 <div className={"success-overlay"}>
