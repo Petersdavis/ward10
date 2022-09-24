@@ -11,12 +11,16 @@
         float:right;
         width:45%;
         margin:20px;
+        max-width:500px;
 
         /* Media Queries */
         @media screen and (max-width: 600px) {
             float:none;
             width:80%;
             margin:15px 10%;
+        }
+        @media screen and (min-width:1400px){
+            max-width:22%;
         }
     }
     .rent-image{
