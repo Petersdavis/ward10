@@ -77,10 +77,10 @@ export default class extends React.Component {
             <div className = "contents">
                 <h1 className="sub-title">Indigenous Relations: </h1>
                 <img className="section-image" src={indigenousImage}/>
-                <p>Peter is optimistic about the future of indigenous/non-indigenous relations in our community and our country.  The Truth and Reconciliation Commission began a process which continues today whereby all Canadians can begin to have a shared understanding of our past.</p>
-                <p>While there is value in truth, it’s important to recognize that truth in and of itself is not reconciliation.  The prerequisite for reconciliation is for non-indigenous Canadians to recognize that its in the interest of all Canadians to promote strong indigenous communities in our midst. </p>
-                <p>Peter is prepared to collaborate with indigenous representatives to empower them to achieve their vision of a permanent space for indigenous life and culture in the Region of Waterloo.</p>
-                <p>As a gesture of Peter’s intention to listen to and to collaborate with indigenous leaders, our campaign has made a small financial contribution to the <a href={"https://aocan.org/"}>Anishinabeg Outreach Center</a> located in Kitchener.</p>
+                <p>We are optimistic about the future of indigenous/non-indigenous relations in our community and our country.  The Truth and Reconciliation Commission began a process which continues today whereby all Canadians can begin to have a shared understanding of our past.</p>
+                <p>While there is value in truth, we recognize that truth in and of itself is not reconciliation.  The prerequisite for reconciliation is for non-indigenous Canadians to recognize that its in the interest of all Canadians to promote strong indigenous communities in our midst. </p>
+                <p>Our leaders must collaborate with indigenous representatives in the spirit of mutual benefit to empower them to achieve their vision of a permanent space for indigenous life and culture in the Region of Waterloo.</p>
+                <p>As a gesture of our intention to listen to and to collaborate with indigenous leaders, we have made a small financial contribution to the <a href={"https://aocan.org/"}>Anishinabeg Outreach Center</a> located in Kitchener.</p>
             </div>
         </div>
     )
